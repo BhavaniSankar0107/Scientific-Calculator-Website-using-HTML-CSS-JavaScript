@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <script src="script.js"></script>
+    <title>Scientific Calculator</title>
+</head>
+<body>
+    <h2>CALCULATOR</h2>
+    <h3>Calculating Tomorrow, Today: Your Precision Partner in Numbers.</h3>
+    <div class="calculator">
+        <form>
+            <div>
+                <input type="text" id="display">
+            </div>
+            <div>
+                <input type="button" value="log" class="other" onclick="log()">
+                <input type="button" value="x²" class="other" onclick="power(2)">
+                <input type="button" value="x³" class="other" onclick="power(3)">
+                <input type="button" value="." class="other" onclick="appendCharacter('.')">
+                <input type="button" value="DEL" class="clear" onclick="backspace()">
+                <input type="button" value="AC" class="clear" onclick="clearDisplay()">
+                <input type="button" value="/" class="operator" onclick="appendCharacter('/')">
+            </div>
+            <div>
+                <input type="button" value="ln" class="other" onclick="ln()">
+                <input type="button" value="√" class="other" onclick="sqrt()">
+                <input type="button" value="%" class="other" onclick="appendCharacter('%')">
+                <input type="button" value="7" onclick="appendCharacter('7')">
+                <input type="button" value="8" onclick="appendCharacter('8')">
+                <input type="button" value="9" onclick="appendCharacter('9')">
+                <input type="button" value="*" class="operator" onclick="appendCharacter('*')">
+            </div>
+            <div>
+                <input type="button" value="sin⁻¹" class="other" onclick="asin()">
+                <input type="button" value="sin" class="other" onclick="trigFunction('sin')">
+                <input type="button" value="π" class="other" onclick="pi()">
+                <input type="button" value="4" onclick="appendCharacter('4')">
+                <input type="button" value="5" onclick="appendCharacter('5')">
+                <input type="button" value="6" onclick="appendCharacter('6')">
+                <input type="button" value="-" class="operator" onclick="appendCharacter('-')">
+            </div>
+            <div>
+                <input type="button" value="cos⁻¹" class="other" onclick="acos()">
+                <input type="button" value="cos" class="other" onclick="trigFunction('cos')">
+                <input type="button" value="(" class="other" onclick="appendCharacter('(')">
+                <input type="button" value="1" onclick="appendCharacter('1')">
+                <input type="button" value="2" onclick="appendCharacter('2')">
+                <input type="button" value="3" onclick="appendCharacter('3')">
+                <input type="button" value="+" class="operator" onclick="appendCharacter('+')">
+            </div>
+            <div>
+                <input type="button" value="tan⁻¹" class="other" onclick="atan()">
+                <input type="button" value="tan" class="other" onclick="trigFunction('tan')">
+                <input type="button" value=")" class="other" onclick="appendCharacter(')')">
+                <input type="button" value="00" onclick="appendCharacter('00')">
+                <input type="button" value="0" onclick="appendCharacter('0')">
+                <input type="button" value="=" class="equal" onclick="calculate()">
+            </div>
+        </form>
+    </div>
+    <script src="calculator.js"></script>
+</body>
+</html>
